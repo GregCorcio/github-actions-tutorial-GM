@@ -1,0 +1,15 @@
+name: Mi Primer Workflow
+
+on:
+    push:
+      branches:
+         - main
+
+
+jobs:
+   ejemplo:
+     runs -on: ubuntu-latest
+     steps:
+       - name: Gregorio Corcio
+       run: echo "hola mi gente"
+       
