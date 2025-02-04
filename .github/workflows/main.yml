@@ -3,13 +3,18 @@ name: Mi Primer Workflow
 on:
     push:
       branches:
-         - main
+         - QA
 
 
 jobs:
    ejemplo:
-     runs -on: ubuntu-latest
-     steps:
-       - name: Gregorio Corcio
-       run: echo "hola mi gente"
+    runs -on: ubuntu-latest
+    env:
+      PLATAFORMA: "AWS"
+      REGION: "US-EAST-1"
+  steps:
+       - name: Gregorio Corcio - Mario Nolasco
+         run: | 
+          echo "¡Hola, GitHub Actiosns!"
+          echo "Region: $REGION"
        
