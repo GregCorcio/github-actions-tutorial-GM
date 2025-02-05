@@ -18,6 +18,3 @@ jobs:
            echo "Repositorio ${{ github.repository }}"
            echo "Actor: ${{ github.hub }}"
            echo "Evento: ${{ github.event_name }}" 
-
-
-       
