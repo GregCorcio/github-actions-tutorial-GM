@@ -13,10 +13,11 @@ jobs:
        PLATAFORMA: "AWS"
        REGION: "US-EAST-1"
      steps:
-       - name: Mostrar Plataforma solo si es AWS
-         if: env.PLATAFORMA == 'AWS'
-         
-         run: echo "la plataforma es AWS" 
+       - name: Mostrar información de evento
+         run: |
+           echo "Repositorio ${{ github.repository }}"
+           echo "Actor: ${{ github.hub }}"
+           echo "Evento: ${{ github.event_name }}" 
 
 
        
