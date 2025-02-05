@@ -15,6 +15,7 @@ jobs:
      steps:
        - name: Mostrar Plataforma solo si es AWS
          if: env.PLATAFORMA == 'AWS'
+         
          run: echo "la plataforma es AWS" 
 
 
