@@ -7,6 +7,7 @@ on:
 
 
 jobs:
+<<<<<<< HEAD
   build:
     runs-on: ubuntu-latest
     steps:
@@ -26,3 +27,16 @@ jobs:
 
 
        
+=======
+   ejemplo:
+     runs-on: ubuntu-latest
+     env:
+       PLATAFORMA: "AWS"
+       REGION: "US-EAST-1"
+     steps:
+       - name: Mostrar información de evento
+         run: |
+           echo "Repositorio ${{ github.repository }}"
+           echo "Actor: ${{ github.hub }}"
+           echo "Evento: ${{ github.event_name }}" 
+>>>>>>> 92a7648dcfc293b9e414198eb18250e65fb83b4a
