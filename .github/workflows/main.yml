@@ -13,10 +13,8 @@ jobs:
        PLATAFORMA: "AWS"
        REGION: "US-EAST-1"
      steps:
-       - name: Mostrar Plataforma solo si es AWS
-         if: env.PLATAFORMA == 'AWS'
-         
-         run: echo "la plataforma es AWS" 
+       - name: Mostrar API Key (No se mostrara por seguridad)
+         run: echo "API_KEY: ${{ secrets.API_KEY }}"
 
 
        
