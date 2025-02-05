@@ -8,13 +8,14 @@ on:
 
 jobs:
    ejemplo:
-    runs -on: ubuntu-latest
-    env:
-      PLATAFORMA: "AWS"
-      REGION: "US-EAST-1"
-  steps:
-       - name: Gregorio Corcio - Mario Nolasco
-         run: | 
-          echo "¡Hola, GitHub Actiosns!"
-          echo "Region: $REGION"
+     runs-on: ubuntu-latest
+     env:
+       PLATAFORMA: "AWS"
+       REGION: "US-EAST-1"
+     steps:
+       - name: Mostrar Plataforma solo si es AWS
+         if: env.PLATAFORMA == 'AWS'
+         run: echo "la plataforma es AWS" 
+
+
        
