@@ -1,5 +1,5 @@
 using UnityEngine;
-
+//actualizando
 public class PlayerMovement : MonoBehaviour
 {
     public float speed = 5f;
@@ -17,8 +17,9 @@ public class PlayerMovement : MonoBehaviour
         movement.y = Input.GetAxis("Vertical");
     }
 
+//En lugar de asignar directamente velocity, usamos AddForce() para un movimiento más fluido y realista.
     void FixedUpdate()
     {
-        rb.velocity = movement * speed;
+        rb.AddForce(movement * speed);
     }
 }
