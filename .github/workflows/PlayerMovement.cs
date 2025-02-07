@@ -24,4 +24,3 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = Vector2.Lerp(rb.velocity, movement * speed, 0.1f);
     }
 }
-
